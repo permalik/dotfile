@@ -33,3 +33,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# begin command prompt on new line
+new_line='
+'
+PS1=${PS1}${new_line}
