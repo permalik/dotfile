@@ -1,0 +1,197 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "base_keymap": "JetBrains",
+  "ui_font_weight": 400.0,
+  "format_on_save": "on",
+  "prettier": {
+    "allowed": true,
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+    },
+    "enabled_in_text_threads": false,
+  },
+  "show_edit_predictions": true,
+  "agent": {
+    "inline_assistant_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4",
+    },
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4",
+    },
+  },
+  "telemetry": {
+    "metrics": false,
+  },
+  "vim_mode": true,
+  "vim": {
+    "toggle_relative_line_numbers": true,
+  },
+  "ui_font_family": "Berkeley Mono",
+  "buffer_font_family": "Berkeley Mono",
+  "ui_font_size": 14.0,
+  "buffer_font_size": 14.0,
+  // "theme": {
+  //   "mode": "system",
+  //   "light": "Nord Light",
+  // "light": "Kanagawa Lotus",
+  //   "dark": "Nordic"
+  // "dark": "Rosé Pine"
+  // }
+  "theme": {
+    "mode": "system",
+    "light": "Rosé Pine Dawn",
+    "dark": "Rosé Pine",
+  },
+  "theme_overrides": {
+    "Rosé Pine Dawn": {
+      "syntax": {
+        "constant.comment.todo": {
+          "color": "#4078f2ff",
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        },
+        "string.comment.info": {
+          "color": "#50a14fff",
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        },
+        "keyword.comment.warn": {
+          "color": "#c18401ff",
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        },
+        "property.comment.error": {
+          "color": "#ca1243ff",
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        },
+      },
+    },
+    "Rosé Pine": {
+      "syntax": {
+        "constant.comment.todo": {
+          "color": "#4078f2ff",
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        },
+        "string.comment.info": {
+          "color": "#50a14fff",
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        },
+        "keyword.comment.warn": {
+          "color": "#c18401ff",
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        },
+        "property.comment.error": {
+          "color": "#ca1243ff",
+          // "background_color": "#00000000",
+          // "font_weight": "bold",
+          // "font_style": "italic"
+        },
+      },
+    },
+  },
+  "languages": {
+    "TypeScript": {
+      "hard_tabs": true,
+      "tab_size": 2,
+      "prettier": {
+        "allowed": true,
+      },
+    },
+    "JavaScript": {
+      "hard_tabs": true,
+      "tab_size": 2,
+      "prettier": {
+        "allowed": true,
+      },
+      "preferred_line_length": 100,
+    },
+    "Svelte": {
+      "hard_tabs": true,
+      "tab_size": 2,
+      "prettier": {
+        "allowed": true,
+      },
+      "preferred_line_length": 100,
+    },
+    "Python": {
+      "language_servers": ["ruff"],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "code_action": "source.organizeImports.ruff",
+        },
+        {
+          "code_action": "source.fixAll.ruff",
+        },
+        {
+          "language_server": {
+            "name": "ruff",
+          },
+        },
+      ],
+    },
+  },
+  "lsp": {
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "organizeImports": true,
+          "lineLength": 80,
+          "fixAll": true,
+        },
+      },
+    },
+    "gopls": {
+      "binary": {
+        "path": "/Users/tymalik/go/bin/gopls",
+      },
+    },
+    "hls": {
+      "initialization_options": {
+        "haskell": {},
+      },
+    },
+    "jdtls": {
+      "binary": {
+        "path": "/opt/homebrew/bin/jdtls",
+        "ignore_system_version": true,
+      },
+      "initialization_options": {
+        "settings": {
+          "java": {
+            "home": "/Users/tymalik/Library/Java/JavaVirtualMachines/temurin-21.0.7/Contents/Home",
+            "errors": {
+              "incompleteClasspath": {
+                "severity": "warning",
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+}
